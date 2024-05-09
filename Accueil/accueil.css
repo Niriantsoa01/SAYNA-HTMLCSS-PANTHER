@@ -385,7 +385,7 @@ section .second-container img {
     border-radius: 20px;
     margin-top: 150px;
     justify-content: center;
-    background-color: #fff;
+    background-color: #ffffff;
  }
 
  .card-image {
@@ -422,8 +422,8 @@ section .second-container img {
     border: none;
     border-radius: 10px;
     margin-left: 5px;
-    background-color: blue;
-    color: white;
+    background-color: #07338C;
+    color: #ffffff;
  }
 
  .card-content {

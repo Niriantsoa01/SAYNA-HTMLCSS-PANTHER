@@ -1,0 +1,135 @@
+@import url('/police/police.css');
+
+$stack-color : #3D2DA6;
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(2,23,64,0.837641); 
+}
+
+header {
+    display: flex;
+    height: 600px;
+    background-image: url('../Ilustrations/arrière_plan.png');
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    font-family:'beyno';
+}
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+    }
+    li {
+        margin: 5px;
+        color: #fff;
+    & :hover {
+        border-bottom: 2px solid #ffffff;
+    }
+}
+    a {
+        margin: 5px;
+        position: relative;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.logo {
+    margin: auto;
+    display: flex;
+    margin-left: 100px;
+    img {
+    font-size: auto;
+    padding: 0 5px;
+    object-fit: contain;
+        &:hover {
+            filter:brightness(70%) hue-rotate(250deg);
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.black-panther {
+    color: #3D2DA6;
+    width: 600px;
+    font-size: 68px;
+    font-family: 'panthere';
+ }
+
+ .wakanda-forever {
+    color: #3D2DA6;
+    width: 400px;
+    font-size: 32px;
+    font-family: 'beyno';
+ }
+
+ /* paragraphe dessous */
+.story {
+    margin-top: 40px;
+    animation: slide 1.5s ease-out;
+    color: #ffffff;
+    font-family: 'cantarell';
+    font-size: 16px;
+}
+
+@media (max-width: 940px) {
+    .logo img{
+        font-size: auto;
+        padding: 0 5px;
+        object-fit: contain;
+    }
+    section .second-container img {
+        width: 800px;
+        margin-top: 70px;
+        justify-content: flex-end;
+    }
+}
+
+/* ligne à droite */
+.first {
+    border: 2px solid #3D2DA6;
+    height: 400px;
+    margin-left: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.second {
+    height: 200px;
+    border: 2px solid #3D2DA6;
+    margin-left: 50px;
+    position: fixed;
+    z-index: 1;
+        img {
+            position: absolute;
+            top: 120%;
+            margin-left: -10px;
+                &:nth-child(2) {
+                    margin-top: 40px;
+                }
+                &:nth-child(3) {
+                    margin-top: 80px;
+                }
+                &:nth-child(4) {
+                    margin-top: 120px;
+                }
+                &:hover {
+                    filter: brightness(150%);
+                }
+        }
+}
+
+
+

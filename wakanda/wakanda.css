@@ -1,29 +1,8 @@
-@font-face {
-    font-family: 'wakanda';
-    src: url(../fonts/WakandaForever-Regular.ttf) format('TrueType');
-  }
-  
-  @font-face {
-    font-family: 'panthere';
-    src: url(../fonts/panthera.otf) format(TrueType);
-  }
-  
-  @font-face {
-    font-family: 'beyno';
-    src: url(../fonts/beyno-regular.otf) format(TrueType);
-  }
-  
-  @font-face {
-    font-family: 'cantarell';
-    src: url(../fonts/cantarell-regular.ttf) format(TrueType);
-  }
-
-
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(2,23,64,0.837641); 
-}
+@import url('../Accueil/police/police.css');
+@import url('../Accueil/header/header.css');
+@import url('./header/header.css');
+@import url('./contenu/contenu.css');
+@import url('../Accueil/footer/footer.css');
 
 header {
     display: flex;
@@ -32,57 +11,6 @@ header {
     background-size: auto;
     background-position: center;
 }
-
-nav {
-    width: 100%;
-    display: flex;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    font-family: 'beyno';
-}
-
-
-nav ul li a:hover {
-    border-bottom: 2px solid #ffffff;
-  }
-  
- 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-nav ul li {
-    margin: 5px;
-    color: #fff;
-}
-nav ul li a {
-    margin: 5px;
-    position: relative;
-    text-decoration: none;
-    color: white;
-}
-/* logo */
-.logo {
-    margin: auto;
-    display: flex;
-    margin-left: 100px;
-}
-
-.logo a {
-    text-decoration: none;
-}
-
-.logo img {
-    font-size: auto;
-    padding: 0 5px;
-    object-fit: contain;
-}
-
-.logo img:hover {   
-    filter:brightness(70%) hue-rotate(250deg);
-}
-
 @media (max-width: 940px) {
     .logo img{
         font-size: auto;
@@ -95,63 +23,9 @@ nav ul li a {
         justify-content: flex-end;
     }
 }
- /* lignes à gauche */
-.first {
-    position: fixed;
-    height: 400px;
-    border: 2px solid #3D2DA6;
-    left: 20px;
-    top: 0px;
-    z-index: 1;
-}
-
-.second {
-    position: fixed;
-    height: 200px;
-    border: 2px solid #3D2DA6;
-    left: 50px;
-    z-index: 1;
-    
-}
-
-/* icons des lignes de gauche */
-.second img {
-    position: absolute;
-    top: 120%;
-    margin-left: -10px;
-}
-
-.second img:nth-child(2){
-    margin-top: 40px; 
-}
-
-.second img:nth-child(3){
-    margin-top: 80px;
-}
-
-.second img:nth-child(4){
-    margin-top: 120px;
-}
-
-.second img:hover {
-   filter: brightness(150%);
-}
-
 /* section de l'image de presentation */
 
-section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* first column */
-section .first-container {
-    width: 25%;
-    color: white;
-    animation: slide 1.5s ease-out;
-}
 @keyframes slide {
     0% {
       transform: translateX(-100%);
@@ -160,35 +34,6 @@ section .first-container {
       transform: translateX(0);
     }
   }
- .black-panther {
-    color: #3D2DA6;
-    width: 600px;
-    font-size: 43px;
-    margin-top: 150px;
-    font-family: 'beyno';
- }
-
- .wakanda-forever {
-    color: #3D2DA6;
-    width: 500px;
-    font-size: 43px;
-    font-family: 'wakanda';
- }
-
- /* paragraphe dessous */
-.story {
-    margin-top: 40px;
-    animation: slide 1.5s ease-out;
-    color: #ffffff;
-    font-family: 'cantarell';
-    font-size: 16px;
-}
-
-/* second column */
-section .second-container {
-    width: 60%;
-    z-index: -1;
-}
 
 @media(max-width : 940px) {
     section {
@@ -197,52 +42,21 @@ section .second-container {
         align-items: center;
         justify-content: center;
     }
-    
-    /* first column */
-    section .first-container {
-        width: 50%;
-        color: white;
-    }
     section .first-container h1,h2 {
         font-size: 20px;
     }
-    
-    
-    
     /* second column */
     section .second-container {
         width: 50%;
         height: auto;
         z-index: -1;
     }
-    
     section .second-container img {
         width: 300px;
         margin-top: 70px;
         z-index: -1;
     }
 }
-
-/* section & contenu */
-.content {
-   width: 50%;
-   float: left;
-   margin: 0 auto;
-   animation: slide 1.5s ease-out;
-}
-
-.content .image {
-    width: 900px;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    opacity: 0.3;
-    margin-left: 15%;
-    z-index: 1;
-}
-
 
 @media screen and (max-width: 768px) {
     .content {
@@ -260,39 +74,6 @@ section .second-container {
         z-index: 1;
     }
    }
-.content h2 {
-    color: #3D2DA6;
-    margin-left: 50px;
-    font-family: 'beyno';
-    font-size: 32px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: flex;
-}
-
-/* texte de contenu */
-.text-content {
-    color: #FFFFFF;
-    width: 500px;
-    text-align: justify;
-    margin-left: 50px;
-    justify-content: space-between;
-    font-family: 'cantarell';
-    font-size: 16px;
-}
-
-.text-content q {
-    font-size: 14px;
-    font-family: 'cantarell';
-}
-
-video {
-    margin-top: -20px;
-    margin-left: 50px;
-}
 
 @media screen and (max-width: 768px) {
     video {
@@ -323,67 +104,10 @@ video {
 
 
  /* footer */
- footer {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    top: 0;
-    background-image: url('../Ilustrations/back_footer.png');
-    background-size: cover;
-    background-position: center;
-    font-family: 'cantarell';
-}
 
-.image-footer {
-    width: 300px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    margin-top: 20%;
-    margin-left: 30%;
-}
-
-.image-footer img {
-    width: 40px;
-    height: 60px;
-    object-fit: contain;
-    align-items: center;
-    display: flex;
-    margin-top: -100%;
-}
-
-.image-footer > .opacity {
-    width: 300px;
-    height: 200px;
-    display: flex;
-    margin-top: -8%;
-    position: absolute;
-}
 
 .image-footer:hover img:nth-child(1) {
     transform: scale(1.1);
-}
-
-.page {
-    width: 100px;
-    height: 200px;
-    display: block;
-    justify-content: center;
-    margin-top: 20%;
-    margin-left: 10%;
-    color: #fff;
-    letter-spacing: 28%;
-}
-
-.plus {
-    width: 500px;
-    height: 200px;
-    display: block;
-    justify-content: center;
-    margin-top: 20%;
-    margin-left: 10%;
-    color: #fff;
-    letter-spacing: 28%;
 }
 
 .plus img:nth-child(1):hover {
@@ -430,6 +154,7 @@ video {
         margin-left: 15%;
         }
         }
+        
 
         .page-footer, .plus-footer {
             font-size: 22px;

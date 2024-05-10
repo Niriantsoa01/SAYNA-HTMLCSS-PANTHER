@@ -100,9 +100,8 @@ nav ul li a {
 }
  /* lignes à gauche */
 .first {
-    width: 3px;
     height: 400px;
-    background-color: #3D2DA6;
+    border: 2px solid #3D2DA6;
     margin-left: 20px;
     position: fixed;
     z-index: 1;
@@ -111,7 +110,7 @@ nav ul li a {
 .second {
     width: 3px;
     height: 200px;
-    background-color: #3D2DA6;
+    border: 2px solid #3D2DA6;
     margin-left: 50px;
     position: fixed;
     z-index: 1;

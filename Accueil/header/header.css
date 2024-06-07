@@ -104,4 +104,27 @@ nav a {
 }
 .second img:hover {
   filter: brightness(150%);
+}
+
+.black-panther {
+  color: #3D2DA6;
+  width: 600px;
+  font-size: 68px;
+  font-family: "panthere";
+}
+
+.wakanda-forever {
+  color: #3D2DA6;
+  width: 400px;
+  font-size: 32px;
+  font-family: "beyno";
+}
+
+/* paragraphe dessous */
+.story {
+  margin-top: 40px;
+  animation: slide 1.5s ease-out;
+  color: #ffffff;
+  font-family: "cantarell";
+  font-size: 16px;
 }/*# sourceMappingURL=header.css.map */

@@ -9,7 +9,7 @@
 }
 .contact .form {
   width: 800px;
-  height: 450px;
+  height: 500px;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
@@ -25,6 +25,7 @@
   display: block;
   height: 10px;
   padding: 15px;
+  border: 2px solid #000;
   margin-left: 250px;
   margin-top: 15px;
   outline: none;
@@ -43,9 +44,9 @@
 .contact .form .button {
   width: 174px;
   height: 54px;
-  color: #000;
+  color: #faf6f6;
   margin-top: 15px;
-  background-color: #ffffff;
+  background-color: #806565;
   display: flex;
   border: 1px solid #ffffff;
   cursor: pointer;
@@ -53,27 +54,30 @@
   justify-content: center;
   align-items: center;
   margin-left: 350px;
-  z-index: 1;
-  opacity: 1;
+}
+
+.error {
+  margin-left: 33%;
 }
 .contact .form .button:hover {
   box-shadow: 0 0 10px 10px #021740;
 }
 .contact .form .confirm {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1;
-  left: 100px;
+  left: 220px;
   top: 0;
-  width: 100%;
+  margin-top: 30px;
+  width: 1000px;
   height: 100%;
-  overflow: auto;
+  overflow: none;
 }
 .contact .form .confirm p {
   font-size: 50px;
   display: flex;
   justify-content: center;
-  color: white;
+  color: hsl(0, 0%, 100%);
   margin-top: 100px;
   z-index: 1;
 }

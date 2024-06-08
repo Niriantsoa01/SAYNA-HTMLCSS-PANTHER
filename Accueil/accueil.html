@@ -224,8 +224,10 @@
         <div class="form">
             <p class="about">Besoin de l&apos;intervention du Wakanda ?</p>
             <h2 class="form-titre">Contactez nous  !</h2>
-            <input type="text" name="nom" placeholder="Nom">
-            <input type="email" name="mail" id="mail" placeholder="Email">
+            <input type="text"  id="name" placeholder="Nom" required>
+            <p class="error"></p>
+            <input type="email"  id="mail" placeholder="Email" required>
+            <p class="error"></p>
             <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
             <!--Submit-->
             <div class="confirm" id="myModal">
@@ -271,29 +273,6 @@
         <p class="ending">2022 Tous droits réservés Politique de confidentialité Conditions d&apos;utilisation</p>
     </div>
 </footer>
-<script>
-
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("button");
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-modal.style.display = "block";
-}
- 
-span.onclick = function() {
-modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-if (event.target == modal) {
- modal.style.display = "none";
-}
-}
-
-
-
-
-</script>
+<script src="script.js"></script>
 </body>
 </html>

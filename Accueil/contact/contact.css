@@ -63,7 +63,7 @@
   box-shadow: 0 0 10px 10px #021740;
 }
 .contact .form .confirm {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 220px;

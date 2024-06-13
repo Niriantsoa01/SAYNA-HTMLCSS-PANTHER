@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: rgba(2, 23, 64, 0.837641);
+  animation : slide 1.5s ease-out;
 }
 
 header {
@@ -106,18 +107,31 @@ nav a {
   filter: brightness(150%);
 }
 
+.header-section {
+  overflow: auto;
+  width: 100%;
+  display: block;
+}
+.image1 {
+  float: right;
+  width: 650px;
+  height: 500px;
+  margin-top: 5%;
+}
+
 .black-panther {
   color: #3D2DA6;
-  width: 600px;
   font-size: 68px;
   font-family: "panthere";
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
 .wakanda-forever {
   color: #3D2DA6;
-  width: 400px;
   font-size: 32px;
   font-family: "beyno";
+  margin-left: 5%;
 }
 
 /* paragraphe dessous */
@@ -127,4 +141,11 @@ nav a {
   color: #ffffff;
   font-family: "cantarell";
   font-size: 16px;
-}/*# sourceMappingURL=header.css.map */
+  margin-left: 5%;
+}
+
+.header-section a {
+  margin-left: 5%;
+  color: #ffffff;
+}
+/*# sourceMappingURL=header.css.map */

@@ -30,7 +30,6 @@
                 <a href="">
                     <img src="../Ilustrations/icon_MARVEL.png" alt="Logo Marvel"/>
                 </a>
-                
             </div>  
             <ul class="nav-list">
                 <li class="nav-item">
@@ -45,22 +44,18 @@
             </ul>
         </nav>
         <!--section  de l'image d'illustration-->
-        <section>
-            <div class="first-container">
-                <h1 class="black-panther">BLACK PANTHER</h1>
+            <div class="header-section">
+                <img src="image/Pantherhome1..png" alt="" class="image1">
+                <h1 class="black-panther">BLACK PANTHER</h1> 
                 <h2 class="wakanda-forever">Wakanda Forever</h2>
                 <p class="story"> En plus d'être un film qui fait la part belle aux héroïnes, Black Panther rend
                     hommage aux cultures africaine et afro-américaine. On y évoque le
                     racisme, la colonisation et les violences contre les afro-américains.
                     Ce film marque tout une génération, “c &apos;est 100% africain et c &apos;est parfait”. 
                 </p>
-                <p class="voir">Voir plus ></p>
-            </div>
-            <div class="second-container">
-                <img src="image/Pantherhome1..png" alt="">
-            </div>
-        </section>
-    </header>
+                <a href="">Voir plus</a>   
+            </div>   
+         </header>
     <main> 
     <!--image au dessous de navbar-->
     <div class="container">
@@ -219,29 +214,49 @@
            </div>
         </div>
     </section>
-    <!--formulaire-->
-    <section class="contact">
+    <!--formulaire--> 
+    <div class="contact">
         <div class="form">
             <p class="about">Besoin de l&apos;intervention du Wakanda ?</p>
             <h2 class="form-titre">Contactez nous  !</h2>
-            <input type="text"  id="name" placeholder="Nom" required>
-            <p class="error"></p>
-            <input type="email"  id="mail" placeholder="Email" required>
-            <p class="error"></p>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <!--Submit-->
-            <div class="confirm" id="myModal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>ENVOYE</p>
+            <form>
+                <input type="text" name="nom" id="name" placeholder="Nom" required>
+                <input type="email" name="mail" id="mail" placeholder="Email" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="button" id="button">Envoyer</button>
+            </form>
+                <div class="confirm" id="myModal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>ENVOYE</p>
+                    </div>
                 </div>
+               
             </div>
-            <button class="button" id="button">Envoyer</button>
         </div>
-    </section>
-    <!--avant de footer-->
-    <div class="avant-footer">
     </div>
+    <!--
+         <section class="contact">
+        <div class="form">
+            <p class="about">Besoin de l&apos;intervention du Wakanda ?</p>
+            <h2 class="form-titre">Contactez nous  !</h2>
+             <input type="text"  id="name" placeholder="Nom" required>
+                <input type="email"  id="mail" placeholder="Email" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+
+                <div class="confirm" id="myModal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>ENVOYE</p>
+                    </div>
+                </div>
+                <button class="button" id="button">Envoyer</button>
+            </div>
+    </section>
+    -->
+   
+    <!--avant de footer-->
+    <div class="avant-footer"></div>
 </main>
 <!--footer-->
 <footer>

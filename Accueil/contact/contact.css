@@ -17,10 +17,16 @@
   opacity: 0.5;
   background-color: #ffffff;
 }
-.contact .form .form-titre {
+ .form .form-titre {
   font-size: 30px;
 }
-.contact .form input {
+.contact .about, .contact .form-titre {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+form input {
   width: 300px;
   display: block;
   height: 10px;
@@ -31,7 +37,7 @@
   outline: none;
   border-radius: 50px;
 }
-.contact .form textarea {
+form textarea {
   width: 300px;
   display: block;
   height: 60px;
@@ -41,7 +47,7 @@
   outline: none;
   border-radius: 10px;
 }
-.contact .form .button {
+ .button {
   width: 174px;
   height: 54px;
   color: #faf6f6;
@@ -56,13 +62,11 @@
   margin-left: 350px;
 }
 
-.error {
-  margin-left: 33%;
-}
-.contact .form .button:hover {
+ .button:hover {
   box-shadow: 0 0 10px 10px #021740;
 }
-.contact .form .confirm {
+
+.confirm {
   display: none;
   position: fixed;
   z-index: 1;
@@ -71,9 +75,10 @@
   margin-top: 30px;
   width: 1000px;
   height: 100%;
-  overflow: none;
+  overflow: auto;
 }
-.contact .form .confirm p {
+
+ .confirm p {
   font-size: 50px;
   display: flex;
   justify-content: center;
@@ -81,31 +86,28 @@
   margin-top: 100px;
   z-index: 1;
 }
-.contact .about, .contact .form-titre {
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-}
-.contact .modal-content {
+
+.modal-content {
   background-color: rgba(95, 70, 70, 0.8470588235);
   border: none;
   margin-left: 20px;
   width: 80%;
   height: 400px;
 }
-.contact .modal-content .close {
+.modal-content .close {
   color: #000 !important;
   margin-left: 95%;
   font-size: 40px !important;
   font-weight: bold;
 }
-.contact .modal-content .close:hover,
-.contact .modal-content .close:focus {
+.modal-content .close:hover,
+.modal-content .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-.contact .confirm .button {
+.confirm .button {
   font-size: 30px;
   background-color: linear-gradient(to right, rgb(160, 126, 126), rgb(121, 74, 74), rgb(124, 49, 49));
-}/*# sourceMappingURL=contact.css.map */
+}
+/*# sourceMappingURL=contact.css.map */

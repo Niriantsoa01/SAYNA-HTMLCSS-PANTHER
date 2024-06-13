@@ -8,18 +8,15 @@
 /* section de l'image de presentation */
 
 section {
-    width: 100%;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    animation : slide 1.5s ease-out;
 }
 
-/* first column */
-section .first-container {
-    width: 40%;
-    color: white;
-    animation: slide 1.5s ease-out;
-}
+/* animation */
+   
 @keyframes slide {
     0% {
       transform: translateX(-100%);
@@ -28,26 +25,6 @@ section .first-container {
       transform: translateX(0);
     }
   }
- 
-/* voir plus */
-.voir{
-    text-decoration: underline;
-}
-
- 
-
-
-/* second column */
-section .second-container {
-    width: 50%;
-    height: auto;
-}
-section .second-container img {
-    width: 800px;
-    margin-top: 70px;
-    right: 0;
-    animation: slide 1.5s ease-out;
-}
 
 @media(max-width : 940px) {
     section {
@@ -56,29 +33,7 @@ section .second-container img {
         align-items: center;
         justify-content: center;
     }
-    
-    /* first column */
-    section .first-container {
-        width: 50%;
-        color: white;
     }
-    section .first-container h1,h2 {
-        font-size: 20px;
-    }
-    
-    
-    
-    /* second column */
-    section .second-container {
-        width: 50%;
-        height: auto;
-    }
-    
-    section .second-container img {
-        width: 300px;
-        margin-top: 70px;
-    }
-}
 
 /* contenu / classe banner pour l'image au dessous de navbar */
 .container {

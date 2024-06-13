@@ -5,11 +5,11 @@
 @import url('../Accueil/footer/footer.css');
 
 header {
-    display: flex;
     height: 650px;
     background-image: url('../wakanda/image/Pantherwakanda1.png');
     background-size: auto;
     background-position: center;
+    background-clip: initial;
 }
 @media (max-width: 940px) {
     .logo img{
@@ -98,8 +98,21 @@ header {
     display: flex;
     position: absolute;
     font-size: 40px !important;
-    top: 245%;
-    left: 23%;
+    top: 30%;
+    left: 35%;
+    cursor: pointer;
+}
+.div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 240%;
+    left: 20%;
+    border-radius: 50%;
 }
 
 

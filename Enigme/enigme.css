@@ -1,9 +1,9 @@
 @import url('../Accueil/police/police.css'); 
 @import url('../Accueil/header/header.css');
-@import url('../Accueil/footer/footer.css');
 @import url('./footer/footer.css');
 @import url('./contenu/contenu.css');
 @import url('./modal/modal.css');
+
 header {
     display: flex;
     height: 600px;
@@ -170,6 +170,7 @@ header {
         height: 10px;
         background-color: transparent;
       }
+      
       .button {
         width: 74px;
         height: 24px;

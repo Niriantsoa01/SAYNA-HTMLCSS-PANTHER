@@ -2,7 +2,6 @@
 @import url('../Accueil/header/header.css');
 @import url('./header/header.css');
 @import url('./contenu/contenu.css');
-@import url('../Accueil/footer/footer.css');
 
 header {
     height: 650px;
@@ -63,6 +62,7 @@ header {
        width: 100%;
        float: none;
      }
+
      .content img {
         width: 500px;
         height: 400px;
@@ -80,6 +80,7 @@ header {
       width: 400px;
       height: 50vh;
     }
+
     .fa {
         color: #000;
         justify-content: center;
@@ -87,10 +88,24 @@ header {
         display: flex;
         position: absolute;
         font-size: 40px !important;
-        top: 215%;
-        margin-left: 23%;
     }
+
+    .div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        margin-top: -5%;
+        margin-left: 25%;
+        border-radius: 50%;
+    }
+
   }
+
+
 .fa {
     color: #ffffff;
     justify-content: center;
@@ -102,6 +117,7 @@ header {
     left: 35%;
     cursor: pointer;
 }
+
 .div {
     width: 100px;
     height: 100px;
@@ -110,13 +126,10 @@ header {
     align-items: center;
     display: flex;
     position: absolute;
-    top: 240%;
-    left: 20%;
+    top: 200%;
+    left: 15%;
     border-radius: 50%;
 }
-
-
- /* footer */
 
 
 .image-footer:hover img:nth-child(1) {
@@ -136,68 +149,125 @@ header {
     transform: scale(1.1);
 }
 
-@media (max-width: 767px) {
-    .image-footer {
-        width: 100px;
-        height: 100px;
-        margin-top: 20%;
-        margin-left: 10%;
-      }
 
-      .image-footer img {
-        width: 50px;
-        height: 50px;
-        object-fit: contain;
-        object-position: center;
-        display: flex;
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 500px;
+    display: block;
+    background-image: url("../Ilustrations/back_footer.png");
+    background-size: cover;
+    background-position: center;
+    font-family: "cantarell";
+    margin-top: 5%;
+  }
+
+
+.container-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+
+  .footer-content {
+    width: 30%;
+    display: block;
+  }
+
+  .footer-content :hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .opacity {
+    opacity: 1;
+    margin-left: 100px;
+  }
+
+  .image-container {
+    width: 500px;
+    margin-top: -50%;
+    margin-left: 40%;  
+  }
+  
+  .image-container img {
+    width: auto;
+  }
+
+  .page-content {
+    display: block;
+    width: 40%;
+    margin-left: 20%;
+  }
+
+  .page-title p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .footer-contact {
+    width: 30%;
+    display: block;
+  }
+
+  .footer-contact img {
+    margin: 5px;
+  }
+
+  .footer-contact :hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .ending {
+    display: block;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 35%;
+    color: #ffffff;
+  }
+
+  
+  @media only screen and (max-width: 768px) {
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
     }
-    
-    
-    .page {
-        width: 80px;
-        height: 100px;
-        margin-top: 20%;
+
+    .opacity img {
+        width: 200px;
+        margin-left: -100px;
+    }
+
+    .ending {
+        display: flex;
+        margin-top: 60%;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .page-content {
         margin-left: 10%;
+    }
+
+    .footer-contact {
+        width: 100%;
+        display: block;
       }
     
-    .plus {
-        width: 200px;
-        height: 100px;
-        margin-top: 20%;
-        margin-left: 15%;
-        }
-        }
-        
+      .footer-contact img {
+        margin: 5px;
+        display: inline-block;
+      }
 
-        .page-footer, .plus-footer {
-            font-size: 22px;
-            margin-top: -100px;
-        }
-
-        .page a {
-            text-decoration: none;
-            color: #FFFFFF;
-            font-size: 10px;
-        }
-        
-        .page a:hover {
-            text-decoration: underline #FFFFFF;
-        }
-
-        .plus a {
-            text-decoration: none;
-            font-size: 10px;
-        }
-
-        .ending {
-            color: #FFFFFF;
-            font-size: 10px;
-            position: absolute;
-            right: 15%;
-            margin-top: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-
+      .image-container {
+        width: 500px;
+        margin-top: -100%;
+        margin-left: 20%;  
+      }
+  }

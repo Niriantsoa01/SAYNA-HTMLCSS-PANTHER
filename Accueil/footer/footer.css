@@ -1,64 +1,119 @@
-.avant-footer {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  top: 50px;
-  background-color: rgba(2, 23, 64, 0.837641);
-}
 
 footer {
   width: 100%;
-  height: 500px;
+  height: 400px;
   display: flex;
   background-image: url("../Ilustrations/back_footer.png");
   background-size: cover;
   background-position: center;
   font-family: "cantarell";
+  margin-top: 5%;
 }
-footer .image-footer {
-  width: 300px;
-  height: 250px;
+.footer-content {
+  width: 100%;
+  display: block;
+}
+
+.container-footer {
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  margin-top: 20%;
-  margin-left: 30%;
+  width: 100%;
+  margin-left: 10%;
 }
-footer .image-footer:hover img:nth-child(1) {
+
+.footer-logo {
+  line-height: 30px;
+  color: #ffffff ;
+  width: 100%;
+}
+
+.footer-logo img {
+  margin: 10px;
+}
+
+.footer-logo img:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
-footer .image-footer img {
-  width: 40px;
-  height: 60px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  align-items: center;
-  display: flex;
-  margin-top: -100%;
-}
-footer .image-footer > .opacity {
+
+.opacity img {
   width: 300px;
-  height: 200px;
-  display: flex;
-  margin-top: -8%;
+  height: 300px;
+  opacity: 0.8;
+  z-index: -1;
+}
+.opacity:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  z-index: -1;
+}
+
+.page-title > p:hover {
+  text-decoration: underline #FFFFFF;
+  cursor: pointer;
+} 
+
+.image-container {
+  margin-top: -50%;
+  margin-left: 15%;
+}
+
+.image-container img{
+  opacity: 1;
+  z-index: 1;
+}
+.footer-title h2 {
+  font-size: auto;
+}
+
+.page-content {
+  display: block;
+  width: 100%;
+}
+
+.page-title {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+
+.ending {
+  color: #FFFFFF;
+  font-size: 10px;
   position: absolute;
-}
-footer .page {
-  width: 100px;
-  height: 200px;
-  display: block;
+  right: 15%;
+  margin-top: 100px;
+  display: flex;
   justify-content: center;
-  margin-top: 20%;
-  margin-left: 10%;
-  color: #fff;
-  letter-spacing: 28%;
+  align-items: center;
 }
-footer .plus {
-  width: 500px;
-  height: 200px;
-  display: block;
-  justify-content: center;
-  margin-top: 20%;
-  margin-left: 10%;
-  color: #fff;
-  letter-spacing: 28%;
-}/*# sourceMappingURL=footer.css.map */
+ 
+
+@media (max-width: 768px) {
+  footer {
+    width: 100%;
+  }
+  .opacity {
+    width: 100px;
+    opacity: 1;
+    z-index: 1;
+  }
+  .opacity img {
+    width: 200px;
+    height: 200px;
+    margin-left: -70px;  
+  }
+  .image-container {
+    display: flex;
+    margin-top: -110%;
+    margin-left: -60px;
+  }
+
+  .image-container img {
+    z-index: 1;
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
+

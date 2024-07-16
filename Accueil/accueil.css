@@ -8,10 +8,8 @@
 /* section de l'image de presentation */
 
 section {
-    display: flex;
+    display: block;
     width: 100%;
-    align-items: center;
-    justify-content: center;
     animation : slide 1.5s ease-out;
 }
 
@@ -26,60 +24,73 @@ section {
     }
   }
 
-@media(max-width : 940px) {
+@media(max-width : 768px) {
     section {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
     }
+
+    }
+
+    main {
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
     }
 
 /* contenu / classe banner pour l'image au dessous de navbar */
-.container {
+
+.flex-container {
     display: flex;
     background-color: rgba(2,23,64,0.837641);
     padding: 18px;
+    justify-content: center;
+    font-family: 'beyno';
+    color: #FFFFFF;
     animation: slide 1.5s ease-out;
 }
 
 /* Écran petit (mobile) */
 @media (max-width: 767px) {
- .container {
-    flex-direction: column;
+ .flex-container {
+    width: 50px;
+    flex-direction: row;
   }
 
- .container > div {
+ .flex-container > div {
     width: 100%;
-    margin: 10px 0;
+    margin: 0 10px;
+
   }
 }
 
-.container > div {
+.flex-container > div {
     width: 200px;
     background-color: rgba(2,23,64,0.837641);
-    margin: 0px 0px  0px 30px;
+    margin: 10px;
     justify-content: center;
     display: flex;
 }
 
-.container h2 {
+.flex-container h2 {
     color: #3D2DA6;
-    width: 03px;
+    width: 3px;
     justify-content: center;
     text-align: center;
     font-size: 32px;
+    padding-bottom: 5px;
     font-family: 'beyno';
     margin-top: -3px;
 }
-.container > div:nth-child(1) {
+.flex-container > div:nth-child(1) {
     width: 200px;
     height: 300px;
     margin-top: -50px;
     margin-left: 90px;
 }
 
-.container > div:nth-child(2) {
+.flex-container > div:nth-child(2) {
     width: 300px;
     height: 250px;
     color: #fff;
@@ -87,7 +98,7 @@ section {
     margin-left: 30px;
 }
 
-.container > div:nth-child(3) {
+.flex-container > div:nth-child(3) {
     width: 100px;
     height: 250px;
     justify-content: center;
@@ -96,7 +107,7 @@ section {
     margin-left: 35px;
 }
 
-.container > div:nth-child(4) {
+.flex-container > div:nth-child(4) {
     width: 300px;
     height: 250px;
     justify-content: center;
@@ -105,7 +116,7 @@ section {
     margin-left: 55px;
 }
 
-.container > div:nth-child(5) {
+.flex-container > div:nth-child(5) {
     width: 100px;
     height: 250px;
     justify-content: center;
@@ -114,7 +125,7 @@ section {
     margin-left: 3px;
 }
 
-.container h3 {
+.flex-container h3 {
     color: #3D2DA6;
     
 }
@@ -130,7 +141,7 @@ section {
 
  @media (max-width: 767px) {
     input {
-        width: 520px;
+        width: 100%;
         display: block;
         height: 10px;
         padding: 15px;
@@ -167,81 +178,6 @@ section {
     
  }
 
-    /* footer */  
+    
 
-    .plus img:nth-child(1):hover {
-        transform: scale(1.1);
-    }
-    .plus img:nth-child(2):hover {
-        transform: scale(1.1);
-    }
-    .plus img:nth-child(3):hover {
-        transform: scale(1.1);
-    }
-    .plus img:nth-child(4):hover {
-        transform: scale(1.1);
-    }
-
-    @media (max-width: 767px) {
-        .image-footer {
-            width: 100px;
-            height: 100px;
-            margin-top: 20%;
-            margin-left: 10%;
-          }
-
-          .image-footer img {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
-            object-position: center;
-            display: flex;
-            margin-top: 40%;
-        }
-        
-        
-        .page {
-            width: 80px;
-            height: 100px;
-            margin-top: 20%;
-            margin-left: 10%;
-          }
-        
-        .plus {
-            width: 200px;
-            height: 100px;
-            margin-top: 20%;
-            margin-left: 15%;
-            }
-            }
-
-            .page-footer, .plus-footer {
-                font-size: 22px;
-                margin-top: -100px;
-            }
-
-            .page a {
-                text-decoration: none;
-                color: #FFFFFF;
-                font-size: 10px;
-            }
-            
-            .page a:hover {
-                text-decoration: underline #FFFFFF;
-            }
-
-            .plus a {
-                text-decoration: none;
-                font-size: 10px;
-            }
-            
-            .ending {
-                color: #FFFFFF;
-                font-size: 10px;
-                position: absolute;
-                right: 15%;
-                margin-top: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+    

@@ -1,6 +1,6 @@
 .contact {
   display: flex;
-  width: 100%;
+  padding: 50px;
   height: 500px;
   justify-content: center;
   background-image: url("../image/Pantherhome7.png");
@@ -14,9 +14,31 @@
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px;
-  opacity: 0.5;
+  opacity: 0.7;
   background-color: #ffffff;
 }
+
+@media (max-width : 768px) {
+  .container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact .form {
+    width: 100%;
+  }
+
+  form  {
+    display: block;
+    width: 100%;
+    margin-left: -200px;
+  }
+
+  form .button {
+    margin-left: 50%;
+  }
+}
+
  .form .form-titre {
   font-size: 30px;
 }
@@ -26,14 +48,15 @@
   font-size: 20px;
 }
 
+
 form input {
   width: 300px;
   display: block;
   height: 10px;
+  margin-left: 255px;
   padding: 15px;
   border: 2px solid #000;
-  margin-left: 250px;
-  margin-top: 15px;
+  margin-top: 15px; 
   outline: none;
   border-radius: 50px;
 }
@@ -47,19 +70,19 @@ form textarea {
   outline: none;
   border-radius: 10px;
 }
- .button {
+ form .button {
   width: 174px;
   height: 54px;
   color: #faf6f6;
   margin-top: 15px;
-  background-color: #806565;
+  background-color: #735050;
   display: flex;
-  border: 1px solid #ffffff;
+  border: 1px solid #1a0f0f;
   cursor: pointer;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  margin-left: 350px;
+  margin-left: 340px;
 }
 
  .button:hover {

@@ -40,7 +40,16 @@ nav a {
   text-decoration: none;
   color: white;
   z-index: 200;
+  transition: 1s ease-in-out;
 }
+
+.active {
+  transition: 1s ease;
+  border-bottom: 3px solid #3D2DA6;
+  padding: 5px;
+}
+
+
 
 @media (max-width : 768px) {
   nav li {

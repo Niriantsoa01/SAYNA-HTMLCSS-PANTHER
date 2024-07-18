@@ -81,6 +81,7 @@ nav a {
 .logo img:hover {
   filter: brightness(70%) hue-rotate(250deg);
 }
+
 .logo a {
   text-decoration: none;
 }
@@ -91,14 +92,17 @@ nav a {
     padding: 0 5px;
     object-fit: contain;
   }
+  
   section .second-container img {
     width: 800px;
     margin-top: 70px;
     justify-content: flex-end;
   }
+
 }
 
 /* ligne à droite */
+
 .first {
   border: 2px solid #3D2DA6;
   height: 400px;

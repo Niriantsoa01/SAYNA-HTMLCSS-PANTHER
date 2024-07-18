@@ -1,6 +1,6 @@
 .contact {
   display: flex;
-  padding: 50px;
+  padding: 20px;
   height: 500px;
   justify-content: center;
   background-image: url("../image/Pantherhome7.png");
@@ -19,6 +19,7 @@
 }
 
 @media (max-width : 768px) {
+
   .container{
     flex-direction: column;
     text-align: center;
@@ -133,4 +134,5 @@ form textarea {
   font-size: 30px;
   background-color: linear-gradient(to right, rgb(160, 126, 126), rgb(121, 74, 74), rgb(124, 49, 49));
 }
+
 /*# sourceMappingURL=contact.css.map */

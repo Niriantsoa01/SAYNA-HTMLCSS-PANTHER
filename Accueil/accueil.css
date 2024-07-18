@@ -1,3 +1,4 @@
+
 @import url("police/police.css"); 
 @import url("header/header.css");
 @import url("contenu/contenu.css");
@@ -6,7 +7,6 @@
 
 
 /* section de l'image de presentation */
-
 section {
     display: block;
     width: 100%;
@@ -25,21 +25,18 @@ section {
   }
 
 @media(max-width : 768px) {
-    section {
-        width: 100%;
-        display: block;
-    }
+    
 
     }
-
+    
     main {
-        width: 100%;
         display: block;
         margin: 0;
         padding: 0;
     }
 
 /* contenu / classe banner pour l'image au dessous de navbar */
+
 
 .flex-container {
     display: flex;
@@ -52,14 +49,13 @@ section {
 }
 
 /* Écran petit (mobile) */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
  .flex-container {
     width: 50px;
     flex-direction: row;
   }
 
  .flex-container > div {
-    width: 100%;
     margin: 0 10px;
 
   }
@@ -139,7 +135,8 @@ section {
 }
 
 
- @media (max-width: 767px) {
+ @media (max-width: 768px) {
+
     input {
         width: 100%;
         display: block;
